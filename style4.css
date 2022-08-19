@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Patrick Hand', cursive;
+}
+
+body{
+    position: relative;
+    min-height: 100vh;
+    width:100%;
+    background-color: #dabcb2;
+}
+
+.header{
+    position: relative;
+}
+.header img{
+    top:35px;
+    left:33%;
+    width:400px;
+    height: 220px;
+   
+position: relative;
+}
+
+.header .hd{
+position: absolute;
+top:42%;
+margin-left: 40px;
+padding:1px 30px;
+font-size: 50px;
+}
+
+
+#new-task-form{
+    position: absolute;
+    left:35%;
+    bottom: 0.1px;
+    
+    
+
+}
+
+.header #new-task-input{
+    width:250px;
+    height: 40px;
+    background-color: #d9d9d9;
+    border:1px transparent;
+    border-radius: 30px;
+}
+
+.header #new-task-submit{
+    width:70px;
+    height: 40px;
+    background-color: #545454;
+    color: #fff;
+    border-radius: 30px;
+    border:1px transparent;
+    
+}
+
+#tasks{
+   width: 100%;
+    height: 100%;
+    position: fixed;
+    margin-top: 43px;
+    overflow:scroll;
+}
+
+#tasks::-webkit-scrollbar {
+    width: 1em;
+  }
+   
+  #tasks::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+   
+  #tasks::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+  }
+.task{
+    position: relative;
+    width: 387px;
+    height: 60px;
+    background-color: #edeaea;
+    left: 33.4%;
+    padding:5px 20px; 
+    border: 2px solid black;
+    box-shadow: 7px 7px black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.4s ease;
+}
+
+.task:hover{
+    width:397px;
+    height: 70px;
+}
+ .text{
+    font-size: 20px;
+   background-color:#edeaea ;
+   border: transparent;
+}
+
+
+.actions button{
+    border: transparent;
+    background-color: transparent;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.delete img{
+    width: 30px;
+    height: 30px;
+    
+}
+
+.edit img{
+    width: 30px;
+    height: 30px;
+}
+
+.content.checked input{
+    text-decoration: line-through;
+}
+
